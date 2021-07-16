@@ -1,0 +1,82 @@
+body {
+  font-family: "Amatic SC", cursive;
+}
+
+.container {
+  border-radius: 20px;
+  box-shadow: 2px 5px 8px 2px rgba(0, 0, 0, 0.61);
+  width: 1000px;
+  padding: 20px 30px;
+  margin: 30px auto;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+#beta {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 54px;
+  display: inline;
+}
+#fahrenheit-temp {
+  font-size: 50px;
+}
+#fahrenheit {
+  font-size: 28px;
+}
+#celsius {
+  font-size: 28px;
+}
+#details {
+  margin: 15px 0px;
+  padding: 0px;
+}
+
+#radar {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#current-date-time {
+  font-size: 28px;
+  font-style: oblique;
+  text-align: right;
+}
+
+.current {
+  text-align: center;
+  font-size: 42px;
+  margin: 0 auto;
+}
+
+#entered-city {
+  font-size: 44px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+p {
+  text-align: center;
+  font-size: 40px;
+}
+h3 {
+  font-size: 34px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card-body {
+  font-size: 28px;
+  border-radius: 20px;
+  display: inline;
+}
+
+footer {
+  text-align: center;
+}
