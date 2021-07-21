@@ -33,11 +33,12 @@ h1 {
   padding: 0px;
 }
 
-#radar {
+.form-group {
   font-size: 24px;
   text-align: center;
   margin: 0 auto;
   padding: 0 auto;
+  text-align: left;
 }
 
 #current-date-time {
