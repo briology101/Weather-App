@@ -45,9 +45,25 @@ function displayCurrentLocation(event) {
 }
 
 function displayWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let weather = document.querySelector("#fahrenheit-temp");
-  weather.innerHTML = `${temperature}°F`;
+  let currentTemp = document.querySelector("#temp-current");
+  let currentFeel = document.querySelector("#feels-like");
+  let currentHumidity = document.querySelector("#humidity");
+  let currentPressure = document.querySelector("#pressure");
+  let currentConditions = document.querySelector("#conditions");
+  let currentWind = document.querySelector("#wind");
+  let currentWindGust = document.querySelector("#wind-gust");
+  let iconElement = document.querySelector("#icon");
+  currentTemp.innerHTML = Math.round(response.data.main.temp) + "°F";
+  currentFeel.innerHTML = Math.round(response.data.main.feels_like);
+  currentHumidity.innerHTML = Math.round(response.data.main.humidity);
+  currentPressure.innerHTML = response.data.main.pressure;
+  currentWind.innerHTML = Math.round(response.data.wind.speed);
+  currentWindGust.innerHTML = Math.round(response.data.wind.gust);
+  currentConditions.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   let cityTitle = document.querySelector("#entered-city");
   cityTitle.innerHTML = response.data.name;
   let searchInput = document.querySelector("city-search-input");

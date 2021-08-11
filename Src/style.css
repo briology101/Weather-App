@@ -19,15 +19,10 @@ h1 {
   font-size: 54px;
   display: inline;
 }
-#fahrenheit-temp {
-  font-size: 50px;
+#city-search-input {
+  font-size: 25px;
 }
-#fahrenheit {
-  font-size: 28px;
-}
-#celsius {
-  font-size: 28px;
-}
+
 #details {
   margin: 15px 0px;
   padding: 0px;
@@ -42,22 +37,28 @@ h1 {
 }
 
 #current-date-time {
-  font-size: 28px;
+  font-size: 35px;
   font-style: oblique;
   text-align: right;
-}
-
-.current {
-  text-align: center;
-  font-size: 42px;
-  margin: 0 auto;
+  color: #b4f292;
 }
 
 #entered-city {
-  font-size: 44px;
+  text-align: center;
+  font-size: 50px;
+  color: #358d93;
   margin: 0 auto;
   padding: 0 auto;
 }
+
+#temp-current {
+  font-size: 50px;
+  color: #358d93;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+}
+
 p {
   text-align: center;
   font-size: 40px;
@@ -66,12 +67,25 @@ h3 {
   font-size: 34px;
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+#temp-id {
+  text-align: center;
+}
+#icon-condition {
+  text-align: center;
 }
 
+#conditions {
+  text-align: center;
+  font-size: 45px;
+  margin: 0 auto;
+  color: #358d93;
+}
+
+#current-summary {
+  text-align: center;
+  font-size: 35px;
+  color: #358d93;
+}
 .card-body {
   font-size: 28px;
   border-radius: 20px;
@@ -79,6 +93,6 @@ h3 {
 }
 
 footer {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
 }

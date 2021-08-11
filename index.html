@@ -53,28 +53,29 @@
         <div class="card-body">
   <div class="row">
     <div class="col-4">
-      <h4 class="current" id="entered-city"></h4></br>
-       <p><span id=fahrenheit-temp></span></br>
-                <i class="fas fa-cloud-sun"></i></br>
-                Sunny
-      </p>
-    </div>
+      <div id="entered-city"></div>
+      <div id="temp-current"></div>
+                  </div>
 
     <div class="col-4">
-      <div class="precipitation">Precipitation:</div>
-      <div class="humidity">Humidity:</div>
-      <div class="wind">Wind:</div>
-      <div class="visibility">Visibility:</div>
-      <div class="pressure">Pressure:</div>
-      <div class="dew-point">Dew Point:</div>
+      <div id = "icon-condition">
+  <img 
+                src = ""
+                alt = ""
+                id = "icon"
+                class = "float-left"/></br>
+                </div>
+                <div id="conditions"></div>
+                
     </div>
     <div class="col-4">
-      <div class="air-quality">Air Quality:</div>
-      <div class="allergy">Allergy Outlook:</div>
-      <div class="UV">UV Index:</div>
-      <div class="sunrise">Sunrise:</div>
-      <div class="sunset">Sunset:</div>
-      <div class="moon">Moon Phase:</div>
+      <div id = "current-summary">
+      Feels Like:    <span id="feels-like"></span>%</br>
+      Humidity:    <span id="humidity"></span>%</br>
+      Wind Speed:    <span id="wind"></span> mph</br>
+      Wind Gusts:    <span id="wind-gust"></span> mph</br>
+      Pressure:    <span id="pressure"></span> hPa</br>
+      </div>
     </div>
     </div>
   </div>
@@ -86,7 +87,6 @@
   </div>
 </div>
 
-  <div class="scrolling-wrapper">
     <div class="card">
     <div class="card-body">
       <div class="row" id="daily">
@@ -172,14 +172,14 @@
       </div>
     </div>
   </div> 
-</div>
-</div>
-    
-<footer>
+  <footer>
   <div class="row">
   <span class="col-12"><a href="https://github.com/briology101/Weather-App" target="_blank">Open source code</a> by Bri Franz-Jonas</span>
 </div>
 </footer>
+</div>
+    
+
 <script src = "Src/app.js"></script>
 </body>
 </html>
