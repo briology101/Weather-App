@@ -2,6 +2,9 @@ function current() {
   let now = new Date();
   let hour = now.getHours();
   let minute = now.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
   let date = now.getDate();
   let days = [
     "Sunday",
@@ -45,10 +48,10 @@ function displayCurrentLocation(event) {
 }
 
 function displayWeather(response) {
+  console.log(response);
   let currentTemp = document.querySelector("#temp-current");
   let currentFeel = document.querySelector("#feels-like");
   let currentHumidity = document.querySelector("#humidity");
-  let currentPressure = document.querySelector("#pressure");
   let currentConditions = document.querySelector("#conditions");
   let currentWind = document.querySelector("#wind");
   let currentWindGust = document.querySelector("#wind-gust");
@@ -56,7 +59,6 @@ function displayWeather(response) {
   currentTemp.innerHTML = Math.round(response.data.main.temp) + "°F";
   currentFeel.innerHTML = Math.round(response.data.main.feels_like);
   currentHumidity.innerHTML = Math.round(response.data.main.humidity);
-  currentPressure.innerHTML = response.data.main.pressure;
   currentWind.innerHTML = Math.round(response.data.wind.speed);
   currentWindGust.innerHTML = Math.round(response.data.wind.gust);
   currentConditions.innerHTML = response.data.weather[0].description;
