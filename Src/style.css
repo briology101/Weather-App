@@ -16,7 +16,8 @@ body {
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 65px;
+  color: rgb(51, 139, 147);
   display: inline;
 }
 
@@ -98,7 +99,19 @@ footer {
   font-size: 16px;
 }
 
-#daily {
-  font-size: 15px;
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 35px;
+  color: rgb(51, 139, 147);
+}
+
+.weather-forecast-temperatures {
+  font-size: 30px;
+  color: rgb(51, 139, 147);
+}
+
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
